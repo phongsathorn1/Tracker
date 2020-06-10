@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Sheet(models.Model):
-    Title = models.TextField(null=True, blank=True)
-    Body = models.TextField(null=True, blank=True)
-    Score = models.IntegerField(null=True, blank=True)
+    title = models.TextField(null=True, blank=True)
+    url = models.URLField(null=True, blank=True)
+    description_info = models.TextField(null=True, blank=True)
+    keywords_info = models.TextField(null=True, blank=True)
