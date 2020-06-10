@@ -8,4 +8,4 @@
   6) เข้าไปที่ sheet จะมีให้ import csv หรือ excel บลาๆ เข้าไปได้
   
 ## การใช้
-  ยิง api get ใช้ param เป็น query เช่น http://127.0.0.1:8000/sheet/?query=สวัสดี
+  ยิง api get ใช้ search param เปน "query" เช่น http://127.0.0.1:8000/sheet/?query=สวัสดี
