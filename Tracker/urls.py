@@ -7,6 +7,6 @@ router = routers.DefaultRouter()
 router.register(r'sheet', SheetViewset, 'sheet')
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('fake-admin/', admin.site.urls),
+    path('', admin.site.urls),
+    path('api/', include(router.urls))
 ]
