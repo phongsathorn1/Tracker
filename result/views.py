@@ -7,7 +7,7 @@ from rest_framework.response import Response
 from rest_framework.status import HTTP_200_OK, HTTP_404_NOT_FOUND
 
 
-class SheetViewset(viewsets.GenericViewSet):
+class SheetViewset(viewsets.GenericViewSet, mixins.ListModelMixin):
         queryset = Sheet.objects.all()
         serializer_class = SheetSerializer
 
